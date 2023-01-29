@@ -1,0 +1,21 @@
+{
+  "name": "188",
+  "version": "1.0.0",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Nikola Marović",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.27.1",
+    "fractional": "^1.0.0",
+    "parcel": "^2.8.2",
+    "regenerator-runtime": "^0.13.11"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2"
+  },
+  "description": ""
+}
