@@ -78,7 +78,6 @@ const controlSearchResults = async function (page = state.search.page) {
     const state2 = await model.loadSearchResults(query);
     state.search = state2.search;
     state.search.page = 1;
-    console.log('   ');
 
     const start = (page - 1) * RES_PER_PAGE;
     const end = page * RES_PER_PAGE;
