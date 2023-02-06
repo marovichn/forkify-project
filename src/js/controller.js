@@ -168,7 +168,6 @@ const controlAddRecipe = async function (newRecipe) {
     const state3 = await model.uploadRecipe(newRecipe);
     state.recipe = state3.recipe;
     addBookmark(state.recipe);
-    console.log(state);
 
     //render uploaded recipe
     recipeView.render(state.recipe);
@@ -192,6 +191,7 @@ const controlAddRecipe = async function (newRecipe) {
 const initData = function () {
   const storage = localStorage.getItem('bookmarks');
   if (storage) state.bookmarks = JSON.parse(storage);
+  console.log('WELCOME!!');
 };
 
 const init = function () {
