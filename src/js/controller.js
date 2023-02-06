@@ -101,10 +101,9 @@ const controlPagination = function (goToPage) {
 
   //rendering new pagination buttons
   paginationView.render(state.search);
-  console.log(state.recipe);
 };
 
-controlServings = function (newServings) {
+const controlServings = function (newServings) {
   //update recipe servings
   state.recipe.ingredients.forEach(ing => {
     ing.quantity = (ing.quantity * newServings) / state.recipe.servings;

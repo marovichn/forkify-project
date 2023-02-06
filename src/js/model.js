@@ -84,7 +84,6 @@ export const uploadRecipe = async function (newRecipe) {
       servings: +newRecipe.servings,
       ingredients,
     };
-    console.log(recipe1);
 
     const data = await AJAX(`${API_URL}?key=${KEY}`, recipe1);
     let { recipe } = data.data;
@@ -100,8 +99,6 @@ export const uploadRecipe = async function (newRecipe) {
       ingredients: recipe.ingredients,
       ...(recipe.key && { key: recipe.key }),
     };
-
-    console.log(state);
 
     return state;
   } catch (err) {
