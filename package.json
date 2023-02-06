@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "core-js": "^3.27.1",
-    "fractional": "^1.0.0",
+    "al": "^1.0.0",
     "parcel": "^2.8.2",
     "regenerator-runtime": "^0.13.11"
   },
